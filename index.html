@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herzlichen Glückwunsch zum Geburtstag, Greta!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 600px;
+            width: 100%;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00e8f0;
+            margin-bottom: 20px;
+            animation: textAppear 3s ease-in-out forwards;
+        }
+
+        @keyframes textAppear {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #555;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeIn 2.5s ease-in-out forwards;
+        }
+
+        .highlight {
+            color: #1ee98a;
+            font-weight: bold;
+        }
+
+        .balloons {
+            font-size: 5em;
+            color: #ffeb3b;
+            margin: 20px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1.1em;
+            color: #777;
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Herzlichen Glückwunsch, Greta!</h1>
+        <p>Liebe Greta,</p>
+        <p>Zu deinem ganz besonderen Tag möchte ich dir von Herzen alles Liebe und Gute wünschen. Möge dein neues Lebensjahr dir viele <span class="highlight">Freude</span>, <span class="highlight">Gesundheit</span> und wunderbare <span class="highlight">Momente</span> bringen!</p>
+        <p>Feiere schön und genieße diesen Tag in vollen Zügen!</p>
+        
+        <div class="balloons">🎈🎉🎂</div>
+        
+        <p class="footer">Mit besten Wünschen,<br>Kyrylo:)</p>
+    </div>
+    
+    
+</body>
+</html>
